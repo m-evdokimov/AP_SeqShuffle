@@ -6,6 +6,8 @@ def main():
     while 1:
         try:
             n = int(input('Number of participants:'))
+            if n <= 0:
+                raise ValueError
         except:
             print('Incorrect input...')
         else:
